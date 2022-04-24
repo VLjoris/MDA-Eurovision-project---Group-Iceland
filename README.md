@@ -1,5 +1,5 @@
 # Setup
-### Download 2 zip files and unzip in data folder in git repository root folder
+### Download 2 zip files and unzip in data folder in git repository root 
 https://drive.google.com/drive/folders/1E23Fiajo3h85hyNs6TwdIduRXR2qaCVy?usp=sharing
 
 ### Install packages using following command: 
