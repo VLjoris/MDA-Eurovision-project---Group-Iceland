@@ -7,4 +7,5 @@ pip install -r requirements.txt
 
 ### Create empty neo4j database, run on localhost
 
-### Update password and http_port to the new database you just created in following file:
+### Update password and http_port for the new database you just created in following file:
+authentication/neo4j.txt
