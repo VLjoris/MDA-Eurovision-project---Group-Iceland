@@ -1,1 +1,0 @@
-path to data folder with 2 unzipped folders
