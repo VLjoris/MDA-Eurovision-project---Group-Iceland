@@ -1,0 +1,595 @@
+{
+    "nodes": [
+        {
+            "name": "Albania",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Greece",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Montenegro",
+            "continent": "Nan",
+            "pos": ""
+        },
+        {
+            "name": "Macedonia, the Former Yugoslav Republic of",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Serbia",
+            "continent": "Nan",
+            "pos": ""
+        },
+        {
+            "name": "Andorra",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "France",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Spain",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Armenia",
+            "continent": "Asia",
+            "pos": ""
+        },
+        {
+            "name": "Azerbaijan",
+            "continent": "Asia",
+            "pos": ""
+        },
+        {
+            "name": "Georgia",
+            "continent": "Asia",
+            "pos": ""
+        },
+        {
+            "name": "Turkey",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Austria",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Czech Republic",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Germany",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Hungary",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Italy",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Slovakia",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Slovenia",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Switzerland",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Russian Federation",
+            "continent": "Asia",
+            "pos": ""
+        },
+        {
+            "name": "Belarus",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Latvia",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Lithuania",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Poland",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Ukraine",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Belgium",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Luxembourg",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Netherlands",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Bosnia and Herzegovina",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Croatia",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Bulgaria",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Romania",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Denmark",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Estonia",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Finland",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Norway",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Sweden",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Monaco",
+            "continent": "Nan",
+            "pos": ""
+        },
+        {
+            "name": "Ireland",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "United Kingdom",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "San Marino",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Moldova, Republic of",
+            "continent": "Europe",
+            "pos": ""
+        },
+        {
+            "name": "Morocco",
+            "continent": "Africa",
+            "pos": ""
+        },
+        {
+            "name": "Portugal",
+            "continent": "Europe",
+            "pos": ""
+        }
+    ],
+    "links": [
+        {
+            "source": "AL",
+            "target": "GR"
+        },
+        {
+            "source": "AL",
+            "target": "ME"
+        },
+        {
+            "source": "AL",
+            "target": "MK"
+        },
+        {
+            "source": "AL",
+            "target": "RS"
+        },
+        {
+            "source": "GR",
+            "target": "BG"
+        },
+        {
+            "source": "GR",
+            "target": "MK"
+        },
+        {
+            "source": "GR",
+            "target": "TR"
+        },
+        {
+            "source": "ME",
+            "target": "BA"
+        },
+        {
+            "source": "ME",
+            "target": "HR"
+        },
+        {
+            "source": "ME",
+            "target": "RS"
+        },
+        {
+            "source": "MK",
+            "target": "BG"
+        },
+        {
+            "source": "MK",
+            "target": "RS"
+        },
+        {
+            "source": "RS",
+            "target": "BA"
+        },
+        {
+            "source": "RS",
+            "target": "BG"
+        },
+        {
+            "source": "RS",
+            "target": "HR"
+        },
+        {
+            "source": "RS",
+            "target": "HU"
+        },
+        {
+            "source": "RS",
+            "target": "RO"
+        },
+        {
+            "source": "AD",
+            "target": "FR"
+        },
+        {
+            "source": "AD",
+            "target": "ES"
+        },
+        {
+            "source": "FR",
+            "target": "BE"
+        },
+        {
+            "source": "FR",
+            "target": "DE"
+        },
+        {
+            "source": "FR",
+            "target": "IT"
+        },
+        {
+            "source": "FR",
+            "target": "LU"
+        },
+        {
+            "source": "FR",
+            "target": "MC"
+        },
+        {
+            "source": "FR",
+            "target": "ES"
+        },
+        {
+            "source": "FR",
+            "target": "CH"
+        },
+        {
+            "source": "ES",
+            "target": "MA"
+        },
+        {
+            "source": "ES",
+            "target": "PT"
+        },
+        {
+            "source": "AM",
+            "target": "AZ"
+        },
+        {
+            "source": "AM",
+            "target": "GE"
+        },
+        {
+            "source": "AM",
+            "target": "TR"
+        },
+        {
+            "source": "AZ",
+            "target": "GE"
+        },
+        {
+            "source": "AZ",
+            "target": "RU"
+        },
+        {
+            "source": "AZ",
+            "target": "TR"
+        },
+        {
+            "source": "GE",
+            "target": "RU"
+        },
+        {
+            "source": "GE",
+            "target": "TR"
+        },
+        {
+            "source": "TR",
+            "target": "BG"
+        },
+        {
+            "source": "AT",
+            "target": "CZ"
+        },
+        {
+            "source": "AT",
+            "target": "DE"
+        },
+        {
+            "source": "AT",
+            "target": "HU"
+        },
+        {
+            "source": "AT",
+            "target": "IT"
+        },
+        {
+            "source": "AT",
+            "target": "SK"
+        },
+        {
+            "source": "AT",
+            "target": "SI"
+        },
+        {
+            "source": "AT",
+            "target": "CH"
+        },
+        {
+            "source": "CZ",
+            "target": "DE"
+        },
+        {
+            "source": "CZ",
+            "target": "PL"
+        },
+        {
+            "source": "CZ",
+            "target": "SK"
+        },
+        {
+            "source": "DE",
+            "target": "BE"
+        },
+        {
+            "source": "DE",
+            "target": "DK"
+        },
+        {
+            "source": "DE",
+            "target": "LU"
+        },
+        {
+            "source": "DE",
+            "target": "NL"
+        },
+        {
+            "source": "DE",
+            "target": "PL"
+        },
+        {
+            "source": "DE",
+            "target": "CH"
+        },
+        {
+            "source": "HU",
+            "target": "HR"
+        },
+        {
+            "source": "HU",
+            "target": "RO"
+        },
+        {
+            "source": "HU",
+            "target": "SK"
+        },
+        {
+            "source": "HU",
+            "target": "SI"
+        },
+        {
+            "source": "HU",
+            "target": "UA"
+        },
+        {
+            "source": "IT",
+            "target": "SM"
+        },
+        {
+            "source": "IT",
+            "target": "SI"
+        },
+        {
+            "source": "IT",
+            "target": "CH"
+        },
+        {
+            "source": "SK",
+            "target": "PL"
+        },
+        {
+            "source": "SK",
+            "target": "UA"
+        },
+        {
+            "source": "SI",
+            "target": "HR"
+        },
+        {
+            "source": "RU",
+            "target": "BY"
+        },
+        {
+            "source": "RU",
+            "target": "EE"
+        },
+        {
+            "source": "RU",
+            "target": "FI"
+        },
+        {
+            "source": "RU",
+            "target": "LV"
+        },
+        {
+            "source": "RU",
+            "target": "LT"
+        },
+        {
+            "source": "RU",
+            "target": "NO"
+        },
+        {
+            "source": "RU",
+            "target": "PL"
+        },
+        {
+            "source": "RU",
+            "target": "UA"
+        },
+        {
+            "source": "BY",
+            "target": "LV"
+        },
+        {
+            "source": "BY",
+            "target": "LT"
+        },
+        {
+            "source": "BY",
+            "target": "PL"
+        },
+        {
+            "source": "BY",
+            "target": "UA"
+        },
+        {
+            "source": "LV",
+            "target": "EE"
+        },
+        {
+            "source": "LV",
+            "target": "LT"
+        },
+        {
+            "source": "LT",
+            "target": "PL"
+        },
+        {
+            "source": "PL",
+            "target": "UA"
+        },
+        {
+            "source": "UA",
+            "target": "MD"
+        },
+        {
+            "source": "UA",
+            "target": "RO"
+        },
+        {
+            "source": "BE",
+            "target": "LU"
+        },
+        {
+            "source": "BE",
+            "target": "NL"
+        },
+        {
+            "source": "BA",
+            "target": "HR"
+        },
+        {
+            "source": "BG",
+            "target": "RO"
+        },
+        {
+            "source": "RO",
+            "target": "MD"
+        },
+        {
+            "source": "FI",
+            "target": "NO"
+        },
+        {
+            "source": "FI",
+            "target": "SE"
+        },
+        {
+            "source": "NO",
+            "target": "SE"
+        },
+        {
+            "source": "IE",
+            "target": "GB"
+        }
+    ]
+}
