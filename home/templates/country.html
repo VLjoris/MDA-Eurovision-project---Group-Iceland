@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<head>
+</head>
+<body>
+    <div class="UpperTitle2" >
+        <p style="font-weight:bold;" class="lead mb-0">Average points by year for {{ country}}</p>
+        <img style="width:80%" src='data:image/png;base64,{{ plot_div1 }}'>
+        </div>
+    </div>
+    <div class="UpperTitle2" >
+        <p style="font-weight:bold;" class="lead mb-0">Average points given by {{ country}}</p>
+        <img style="width:80%" src='data:image/png;base64,{{ plot_div2 }}'>
+        </div>
+    </div>
+
+    <div class="UpperTitle2" >
+        <p style="font-weight:bold;" class="lead mb-0">Average points received by {{ country}}</p>
+        <img style="width:80%" src='data:image/png;base64,{{ plot_div3 }}'>
+        </div>
+    </div>
+</body>
+{% endblock content %}

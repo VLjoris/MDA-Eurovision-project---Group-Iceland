@@ -1,0 +1,139 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+<title>Mercator projection</title>
+		<script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
+		<script src="//d3js.org/topojson.v1.min.js"></script>
+
+<div class="container">
+        <div class="col-lg-20">
+
+            <h2 class="lead mb-0">An overview of countries that participated in Eurovision Song Contest from 1975 to 2019.</h2>
+            <h2 class="lead mb-0">Click on a country from the table or the map to view summay statistics.</h2>
+            <!-- Featured blog post-->
+            <div class="table-wrapper-scroll-y" style="height:2000px;padding-top: 30px;">
+
+                <table id="dtBasicExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Code</th>
+                            <th scope="col">Continent</th>
+                            <th scope="col">Religion</th>
+                            <th scope="col">Imigrants</th>
+                            <th scope="col">UTC-offset</th>
+                          </tr>
+                    </thead>
+                    <tbody>
+                        {% for i in features %}
+            
+                        <tr class='clickable-row' >
+                            <td class='clickable_name' data-href='{% url 'go_country' i.code %}'>{{i.name}}</td>
+                            <td>{{i.code}}</td>
+                            <td>{{i.continent}}</td>
+                            <td>{{i.religion}}</td>
+                            <td>{{i.immigrants}}</td>
+                            <td>{{i.utc_offset}}</td>
+                          </tr>
+                    
+                        {% endfor %}
+            
+                    </tbody>
+                  </table>
+                  <h2 class="lead mb-0" style= "">Click on a country to view summay statistics:</h2>
+
+                  <div id="container1" style="padding-top:50">
+                  </div>
+                  <div class="tooltip"></div>
+            </div>
+            
+
+              
+</div>
+
+<script type="text/javascript">
+
+  var map_data = {{ json_map | safe }}; 
+  var country_codes = {{ country_codes | safe }}; 
+
+
+  //Width and height
+  var w = 800;
+  var h = 600;
+  var tooltip = d3.select("div.tooltip");
+
+  //Define map projection
+  var projection = d3.geo.mercator() //utiliser une projection standard pour aplatir les pôles, voir D3 projection plugin
+          .center([ 14.5, 48 ]) //comment centrer la carte, longitude, latitude
+          .translate([ w/2, h/2 ]) // centrer l'image obtenue dans le svg
+          .scale([ w/1 ]); // zoom, plus la valeur est petit plus le zoom est gros 
+
+  //Define path generator
+  var path = d3.geo.path()
+      .projection(projection);
+
+  //Create SVG
+  var svg = d3.select("#container1")
+    .append("svg")
+    .attr("width", "100%")
+    .attr("height", "800")
+    .attr("style","border-style: groove;").style("stroke","white");
+
+
+
+  //Load in GeoJSON data
+  d3.json("", function(json) {
+  json = map_data
+
+  //Bind data and create one path per GeoJSON feature
+  svg.selectAll("path")
+  .data(json.features)
+  .enter()
+  .append("path")
+  .attr("d", path)
+  .attr("stroke", "rgba(8, 81, 156, 0.2)")
+  .attr("fill", "rgba(8, 81, 156, 0.6)")
+  .attr("id", d => d.properties.ISO_A2)
+  .attr("class", d => country_codes.some(item => item.iso === d.properties.ISO_A2))
+  .attr("href", d => '/country/' +d.properties.ISO_A2)
+  .on("mouseover",function(d,i){
+    d3.select(this).attr("stroke-width",2);
+    return tooltip.style("hidden", false).html(d.properties.NAME);
+              })
+              .on("mousemove",function(d){
+                  tooltip.classed("hidden", false)
+                        .style("top", (d3.event.pageY) + "px")
+                        .style("left", (d3.event.pageX + 10) + "px")
+                        .html(d.properties.NAME);
+              })
+              .on("mouseout",function(d,i){
+                console.log("kfdjsklfs")
+                  tooltip.classed("hidden", true);
+              });
+
+
+
+
+  const non_eu = document.querySelectorAll('path.false');
+
+  non_eu.forEach(c => {
+    c.classList.toggle('clicked')
+  });
+
+  const eu = document.querySelectorAll('.true');
+
+  eu.forEach(c => {
+    c.onclick = function(){
+        window.location.pathname = ('/country/' + c.id)
+    }
+
+  });
+});
+
+ 
+ 
+
+
+</script>
+
+{% endblock content %}
