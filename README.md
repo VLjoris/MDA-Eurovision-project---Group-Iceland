@@ -2,13 +2,13 @@
 Deployment location:  https://icelandmda.herokuapp.com
 
 
-## run local 
-#setup
+## Local development 
+# run these commands in root folder:
 python manage.py add_data
 python manage.py makemigrations
 python manage.py migrate
 
-#start server
+# start server
 python manage.py runserver
 or via Waitress:
 waitress-serve --listen=127.0.0.1:8000 MDAapp.wsgi:application
